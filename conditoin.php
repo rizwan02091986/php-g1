@@ -14,6 +14,9 @@
     else{
         echo "<br> you can't drive a car";
     }
+    //task
+
+    // this is for even and odd condition
 
     for($i=0; $i<=10; $i++){
         if($i%2==0){
@@ -23,5 +26,7 @@
             echo "<br> this $i is odd";
         }
     }
+
+    
 
 ?>
