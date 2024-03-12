@@ -23,4 +23,14 @@
         echo "<br> $key : $value";
     }
 
+    // pattern loop
+    for($q=0; $q<=10; $q++){
+        for($w=0; $w<=$q; $w++){
+            for($e=0; $e<=$w; $e++){
+                echo "*";
+            }
+        }
+        echo "<br>";
+    }
+
 ?>
