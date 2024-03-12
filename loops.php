@@ -15,4 +15,20 @@
         echo "<br> $tableNum X $w =" .$tableNum*$w;
     }
 
+    //while loop
+
+    $number = 80;
+    while($number<=85){
+        echo "<br> this is while loop $number";
+        $number++;
+    }
+
+    // do while loop
+    $app = 30;
+    do{
+        echo "<br> this is do while loop $app";
+        $app++;
+    }
+    while($app<=33);
+
 ?>
