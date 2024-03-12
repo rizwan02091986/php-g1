@@ -10,5 +10,17 @@
     foreach ($fruits as $key){
         echo "<br> $key";
     }
-    
+
+    //associate array
+
+    $employee = [
+        "Alex" => "Web Dev",
+        "Henry" => "App Dev",
+        "Rossy" => "SQA"
+    ];
+
+    foreach($employee as $key => $value){
+        echo "<br> $key : $value";
+    }
+
 ?>
