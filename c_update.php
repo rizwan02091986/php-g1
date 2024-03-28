@@ -9,8 +9,9 @@ $result = mysqli_query($conn , $sql);
 if($result == true){
     echo "<br> Your record has been updated!";
 }
+
 else{
-    echo "<br> No record has been updated!";
+    echo "<br> No record has been updated!"; 
 }
 
 ?>
