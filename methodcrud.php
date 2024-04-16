@@ -1,30 +1,29 @@
 <?php
 
-                include("config/one.php");
+include("config/one.php");
 
-                if(isset($_POST['submit'])){
-                    $username = $_POST['username'];
-                    $email = $_POST['email'];
-                    $password = $_POST['password'];
-                    $image = $_FILES['image']['name'];
-            
-                    $sql = "insert into image (username , email , password, image) values ('$username', '$email', '$password', '$image')";
-                    $result = mysqli_query($conn , $sql);
-                    
+if (isset($_POST['submit'])) {
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $image = $_FILES['image']['name'];
+
+    $sql = "insert into image (username , email , password, image) values ('$username', '$email', '$password', '$image')";
+    $result = mysqli_query($conn, $sql);
 
 
-                if(isset($_FILES['image'])){
-                    $file_name = $_FILES['image']['name'];
-                    $file_type = $_FILES['image']['type'];
-                    $file_size = $_FILES['image']['size'];
-                    $file_tmp = $_FILES['image']['tmp_name'];
-            
-                    move_uploaded_file($file_tmp , "upload/" .$file_name);
 
-                }
-            }
+    if (isset($_FILES['image'])) {
+        $file_name = $_FILES['image']['name'];
+        $file_type = $_FILES['image']['type'];
+        $file_size = $_FILES['image']['size'];
+        $file_tmp = $_FILES['image']['tmp_name'];
 
-                ?>
+        move_uploaded_file($file_tmp, "upload/" . $file_name);
+    }
+}
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
